@@ -36,6 +36,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/incois/:path*',
+        destination: 'https://incois.gov.in/:path*',
+      },
+    ]
+  },
 };
 
 export default nextConfig;

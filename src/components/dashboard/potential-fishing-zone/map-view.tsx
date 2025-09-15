@@ -1,5 +1,7 @@
 "use client"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { MapContainer, TileLayer, WMSTileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 export function MapView() {
   return (
@@ -10,11 +12,19 @@ export function MapView() {
       </CardHeader>
       <CardContent>
         <div className="relative h-[600px] w-full">
-          <iframe
-            src="https://incois.gov.in/geoportal/MFASPFZ/index.html"
-            className="w-full h-full rounded-lg border"
-            title="Potential Fishing Zone Map"
-          />
+          <MapContainer center={[20.5937, 78.9629]} zoom={5} scrollWheelZoom={false} className="h-full w-full rounded-lg border">
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <WMSTileLayer
+              url="/incois/geoportal/wms"
+              layers="PFZ:PFZ_Advisory"
+              format="image/png"
+              transparent={true}
+              attribution="INCOIS"
+            />
+          </MapContainer>
         </div>
       </CardContent>
     </Card>
