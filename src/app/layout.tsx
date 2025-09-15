@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'AquaLens',
+  title: 'SAMUDRA',
   description: 'AI-Driven Unified Data Platform for Oceanographic, Fisheries & Biodiversity Insights',
 };
 

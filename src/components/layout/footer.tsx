@@ -34,7 +34,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-white/10 pt-8 text-center text-sm text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} AquaLens. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SAMUDRA. All rights reserved.</p>
         </div>
       </div>
     </footer>

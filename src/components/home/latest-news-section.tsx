@@ -14,8 +14,8 @@ const newsArticles = [
   },
   {
     id: '2',
-    title: 'AquaLens Platform Instrumental in a Major Coral Reef Restoration Project',
-    description: 'Researchers have successfully used the AquaLens data platform to monitor and manage a large-scale coral reef restoration effort, leading to a 40% increase in coral health.',
+    title: 'SAMUDRA Platform Instrumental in a Major Coral Reef Restoration Project',
+    description: 'Researchers have successfully used the SAMUDRA data platform to monitor and manage a large-scale coral reef restoration effort, leading to a 40% increase in coral health.',
     imageUrl: 'https://picsum.photos/seed/news-2/600/400',
     imageHint: 'coral reef',
     link: '#',
