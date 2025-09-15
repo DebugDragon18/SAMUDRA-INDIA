@@ -2,6 +2,7 @@ import Link from 'next/link';
 import {
   Home,
   Info,
+  LayoutDashboard,
 } from 'lucide-react';
 import {
   Tooltip,
@@ -14,6 +15,7 @@ import { Logo } from '@/components/logo';
 const navItems = [
     { href: "/", icon: Home, label: "Home" },
     { href: "/about", icon: Info, label: "About" },
+    { href: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
 ];
 
 export function AppSidebar() {
@@ -25,7 +27,7 @@ export function AppSidebar() {
                 href="#"
                 className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
                 >
-                <Logo />
+                <Logo showText={false} />
                 <span className="sr-only">SAMUDRA</span>
                 </Link>
                 {navItems.map(item => (

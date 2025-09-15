@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function HeroSection() {
   return (
@@ -21,7 +22,9 @@ export function HeroSection() {
           Making the world’s ocean data accessible and useful. A neutral, open-source, and not-for-profit platform for collaboration and innovation.
         </p>
         <div className="mt-8 flex gap-4">
-          <Button size="lg">Explore the data</Button>
+          <Button size="lg" asChild>
+            <Link href="/dashboard">Explore the data</Link>
+          </Button>
           <Button size="lg" variant="secondary">
             Request a demo
           </Button>

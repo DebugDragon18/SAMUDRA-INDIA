@@ -13,6 +13,7 @@ import { Logo } from '@/components/logo';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
+  { href: '/dashboard', label: 'Dashboard' },
 ];
 
 export function AppHeader() {
