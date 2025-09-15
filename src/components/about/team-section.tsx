@@ -8,7 +8,7 @@ const teamMembers = [
   { id: '3',name: 'Sarthak Wawre', role: 'Head of Data Science' },
   { id: '4', name: 'Shalvi Mate', role: 'Lead Engineer' },
   { id: '5', name: 'Leekhit Ingle', role: 'Partnerships Lead' },
-  { id: '6', name: 'Leo Martinez', role: 'UX/UI Designer' },
+  { id: '6', name: 'Swapnil Pophale', role: 'UX/UI Designer' },
 ];
 
 export function TeamSection() {
