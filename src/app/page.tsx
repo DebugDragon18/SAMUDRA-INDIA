@@ -4,6 +4,7 @@ import { DataPlatformSection } from '@/components/home/data-platform-section';
 import { FeaturesSection } from '@/components/home/features-section';
 import { CtaSection } from '@/components/home/cta-section';
 import { Footer } from '@/components/layout/footer';
+import { TeamSection } from '@/components/about/team-section';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
         <DataPlatformSection />
         <FeaturesSection />
         <CtaSection />
+        <TeamSection />
       </main>
       <Footer />
     </div>
