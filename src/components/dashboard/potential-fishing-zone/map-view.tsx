@@ -2,16 +2,20 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapContainer, TileLayer, WMSTileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import Link from "next/link";
 
 export function MapView() {
   return (
     <Card className="shadow-lg">
       <CardHeader>
         <CardTitle>Potential Fishing Zone - Map</CardTitle>
-        <CardDescription>Interactive map showing real-time fishing zone advisories.</CardDescription>
+        <CardDescription>Interactive map showing real-time fishing zone advisories. Click map to view on INCOIS.</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="relative h-[600px] w-full">
+          <Link href="https://incois.gov.in/geoportal/MFASPFZ/index.html" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10">
+              <span className="sr-only">View full map on INCOIS geoportal</span>
+          </Link>
           <MapContainer center={[20.5937, 78.9629]} zoom={5} scrollWheelZoom={false} className="h-full w-full rounded-lg border">
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
