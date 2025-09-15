@@ -20,7 +20,7 @@ export function TeamSection() {
             Meet the Team
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            A passionate group of scientists, engineers, and strategists dedicated to the ocean.
+            A passionate group of Researchers, engineers, and strategists dedicated to the ocean.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
