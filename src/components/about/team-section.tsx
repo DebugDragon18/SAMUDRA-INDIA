@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
 
 const teamMembers = [
-  { id: '1', name: 'Dr. Evelyn Reed', role: 'CEO & Oceanographer' },
+  { id: '1', name: 'Asim Malik', role: 'CEO & Oceanographer' },
   { id: '2', name: 'Kenji Tanaka', role: 'CTO' },
   { id: '3',name: 'Maria Flores', role: 'Head of Data Science' },
   { id: '4', name: 'David Chen', role: 'Lead Engineer' },
