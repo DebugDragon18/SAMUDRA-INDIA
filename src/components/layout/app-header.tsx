@@ -20,7 +20,7 @@ export function AppHeader() {
     <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b border-white/10 bg-background px-4 lg:h-20 lg:px-6">
       <div className="flex items-center gap-6">
         <Link href="/">
-          <Logo showText={false} />
+          <Logo />
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {navItems.map((item) => (
