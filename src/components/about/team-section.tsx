@@ -6,7 +6,7 @@ const teamMembers = [
   { id: '1', name: 'Asim Malik', role: 'Org. Lead & Designer' },
   { id: '2', name: 'Rugved Narkar', role: 'Frontend Developer' },
   { id: '3',name: 'Sarthak Wawre', role: 'Backend Developer' },
-  { id: '4', name: 'Shalvi Mate', role: 'Lead Engineer' },
+  { id: '4', name: 'Shalvi Mate', role: 'Content Lead & Research' },
   { id: '5', name: 'Leekhit Ingle', role: 'Partnerships Lead' },
   { id: '6', name: 'Swapnil Pophale', role: 'UX/UI Designer' },
 ];
