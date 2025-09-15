@@ -9,8 +9,6 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Logo } from '@/components/logo';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -18,8 +16,6 @@ const navItems = [
 ];
 
 export function AppHeader() {
-  const userAvatar = PlaceHolderImages.find((img) => img.id === 'user-avatar');
-
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b border-white/10 bg-background px-4 lg:h-20 lg:px-6">
       <div className="flex items-center gap-6">
@@ -43,27 +39,9 @@ export function AppHeader() {
         <Button variant="outline" className="hidden md:flex">
           Request a demo
         </Button>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <Avatar className="h-8 w-8">
-                {userAvatar && (
-                  <AvatarImage
-                    src={userAvatar.imageUrl}
-                    alt="User avatar"
-                    data-ai-hint={userAvatar.imageHint}
-                  />
-                )}
-                <AvatarFallback>U</AvatarFallback>
-              </Avatar>
-              <span className="sr-only">Toggle user menu</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem>My Account</DropdownMenuItem>
-            <DropdownMenuItem>Logout</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <Button asChild>
+          <Link href="/login">Sign In</Link>
+        </Button>
         <Sheet>
           <SheetTrigger asChild>
             <Button
