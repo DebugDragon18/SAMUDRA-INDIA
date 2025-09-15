@@ -1,10 +1,12 @@
 "use client"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function PotentialFishingZone() {
     return (
-        <Card className="shadow-lg">
+      <Link href="/dashboard/potential-fishing-zone">
+        <Card className="shadow-lg h-full transition-all hover:shadow-xl hover:border-primary/50">
             <CardHeader>
                 <CardTitle>Potential Fishing Zone Advisory</CardTitle>
                 <CardDescription>Real-time advisories for optimal fishing locations.</CardDescription>
@@ -15,5 +17,6 @@ export function PotentialFishingZone() {
                 </div>
             </CardContent>
         </Card>
+      </Link>
     )
 }
