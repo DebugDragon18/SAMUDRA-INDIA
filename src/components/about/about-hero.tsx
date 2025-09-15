@@ -4,7 +4,7 @@ export function AboutHero() {
   return (
     <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?q=80&w=1780&auto=format&fit=crop"
+        src="https://picsum.photos/seed/earth-space/1780/1068"
         alt="Earth from space"
         fill
         className="object-cover"

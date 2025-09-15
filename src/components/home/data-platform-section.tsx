@@ -34,7 +34,7 @@ export function DataPlatformSection() {
         </div>
         <div className="order-1 md:order-2">
           <Image
-            src="https://images.unsplash.com/photo-1581093450021-9f5a135a5a11?q=80&w=2070&auto=format&fit=crop"
+            src="https://picsum.photos/seed/data-scientist/600/400"
             alt="Data scientist working"
             width={600}
             height={400}

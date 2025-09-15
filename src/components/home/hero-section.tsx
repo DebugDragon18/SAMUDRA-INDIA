@@ -5,7 +5,7 @@ export function HeroSection() {
   return (
     <section className="relative h-[80vh] min-h-[500px] overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1502920514358-90b8f74c8f13?q=80&w=2070&auto=format&fit=crop"
+        src="https://picsum.photos/seed/ocean-viz/2070/1164"
         alt="Ocean data visualization"
         fill
         className="object-cover"
