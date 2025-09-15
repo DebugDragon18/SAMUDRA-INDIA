@@ -2,8 +2,20 @@ import { AppHeader } from '@/components/layout/app-header';
 import { AppSidebar } from '@/components/layout/app-sidebar';
 import { Button } from '@/components/ui/button';
 import { LiveData } from '@/components/dashboard/potential-fishing-zone/live-data';
-import { MapView } from '@/components/dashboard/potential-fishing-zone/map-view';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import { Skeleton } from '@/components/ui/skeleton';
+
+const MapView = dynamic(
+  () =>
+    import('@/components/dashboard/potential-fishing-zone/map-view').then(
+      (mod) => mod.MapView
+    ),
+  {
+    ssr: false,
+    loading: () => <Skeleton className="h-[600px] w-full" />,
+  }
+);
 
 export default function PotentialFishingZonePage() {
   return (
