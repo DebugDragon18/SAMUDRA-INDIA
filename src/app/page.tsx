@@ -18,8 +18,8 @@ export default function HomePage() {
         <FeaturesSection />
         <KeyFeaturesSection />
         <CtaSection />
-        <TeamSection />
         <LatestNewsSection />
+        <TeamSection />
       </main>
       <Footer />
     </div>
