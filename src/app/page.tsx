@@ -5,6 +5,7 @@ import { FeaturesSection } from '@/components/home/features-section';
 import { CtaSection } from '@/components/home/cta-section';
 import { Footer } from '@/components/layout/footer';
 import { TeamSection } from '@/components/about/team-section';
+import { LatestNewsSection } from '@/components/home/latest-news-section';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <FeaturesSection />
         <CtaSection />
         <TeamSection />
+        <LatestNewsSection />
       </main>
       <Footer />
     </div>
