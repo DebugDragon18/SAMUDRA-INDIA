@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { Line, LineChart, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import {
@@ -12,31 +12,39 @@ import {
   ChartContainer,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { fishPopulationData } from "@/lib/data";
+
+const oceanData = [
+  { time: "00:00", temperature: 22.5, salinity: 34.8, current: 0.5 },
+  { time: "04:00", temperature: 22.4, salinity: 34.9, current: 0.4 },
+  { time: "08:00", temperature: 22.8, salinity: 34.9, current: 0.6 },
+  { time: "12:00", temperature: 23.5, salinity: 35.0, current: 0.8 },
+  { time: "16:00", temperature: 23.8, salinity: 34.9, current: 0.7 },
+  { time: "20:00", temperature: 23.2, salinity: 34.8, current: 0.6 },
+];
 
 const chartConfig = {
-  pelagic: {
-    label: "Pelagic",
+  temperature: {
+    label: "Temperature (°C)",
     color: "hsl(var(--chart-1))",
   },
-  demersal: {
-    label: "Demersal",
+  salinity: {
+    label: "Salinity (PSU)",
     color: "hsl(var(--chart-2))",
   },
 };
 
-export function FishPopulationChart() {
+export function OceanData() {
   return (
-    <Card>
+    <Card className="shadow-lg">
       <CardHeader>
-        <CardTitle>Fish Population Trends</CardTitle>
-        <CardDescription>2018 - 2024</CardDescription>
+        <CardTitle>Live Ocean Data</CardTitle>
+        <CardDescription>Temperature, Salinity, and Currents</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="aspect-auto h-[250px] w-full">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart
-              data={fishPopulationData}
+              data={oceanData}
               margin={{
                 top: 5,
                 right: 10,
@@ -46,33 +54,43 @@ export function FishPopulationChart() {
             >
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
               <XAxis
-                dataKey="year"
+                dataKey="time"
                 tickLine={false}
                 axisLine={false}
                 tickMargin={8}
-                tickFormatter={(value) => value.toString()}
               />
                <YAxis
+                yAxisId="left"
                 tickLine={false}
                 axisLine={false}
                 tickMargin={8}
-                tickFormatter={(value) => `${value / 1000}k`}
+                tickFormatter={(value) => `${value}°C`}
+              />
+                <YAxis
+                yAxisId="right"
+                orientation="right"
+                tickLine={false}
+                axisLine={false}
+                tickMargin={8}
+                tickFormatter={(value) => `${value}`}
               />
               <Tooltip
                 cursor={false}
                 content={<ChartTooltipContent indicator="line" />}
               />
               <Line
-                dataKey="pelagic"
+                yAxisId="left"
+                dataKey="temperature"
                 type="natural"
-                stroke="var(--color-pelagic)"
+                stroke="var(--color-temperature)"
                 strokeWidth={2}
                 dot={false}
               />
               <Line
-                dataKey="demersal"
+                yAxisId="right"
+                dataKey="salinity"
                 type="natural"
-                stroke="var(--color-demersal)"
+                stroke="var(--color-salinity)"
                 strokeWidth={2}
                 dot={false}
               />

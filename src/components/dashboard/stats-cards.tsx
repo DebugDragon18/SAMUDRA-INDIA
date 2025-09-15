@@ -11,7 +11,7 @@ export function StatsCards() {
   return (
     <>
       {statsCardsData.map((card) => (
-        <Card key={card.title}>
+        <Card key={card.title} className="shadow-lg">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
               {card.title}
@@ -19,8 +19,8 @@ export function StatsCards() {
             <card.icon className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{card.value}</div>
-            <p className={cn("text-xs text-muted-foreground", card.change > 0 ? "text-green-600" : "text-red-600")}>
+            <div className="text-2xl font-bold text-primary">{card.value}</div>
+            <p className={cn("text-xs", card.change > 0 ? "text-green-600" : "text-red-600")}>
               {card.change > 0 ? '+' : ''}{card.change}% from last month
             </p>
           </CardContent>

@@ -1,29 +1,29 @@
-import { Users, Database, FileText, BarChart } from 'lucide-react';
+import { Fish, Waves, Sprout, BrainCircuit } from 'lucide-react';
 
 export const statsCardsData = [
   {
-    title: 'Total Datasets',
-    value: '1,250',
+    title: 'Potential Fishing Zones',
+    value: '12 Active',
+    change: 2.1,
+    icon: Fish,
+  },
+  {
+    title: 'Coral Reef Monitoring',
+    value: '5 Areas',
+    change: 0.5,
+    icon: Sprout,
+  },
+  {
+    title: 'Ocean Data Sensors',
+    value: '1,250 Live',
     change: 12.5,
-    icon: Database,
+    icon: Waves,
   },
   {
-    title: 'Active Researchers',
-    value: '350',
-    change: 5.2,
-    icon: Users,
-  },
-  {
-    title: 'Reports Generated',
-    value: '890',
-    change: 20.1,
-    icon: FileText,
-  },
-  {
-    title: 'API Calls Today',
-    value: '23,591',
-    change: -2.8,
-    icon: BarChart,
+    title: 'AI Predictions',
+    value: '8 Active Models',
+    change: 1.8,
+    icon: BrainCircuit,
   },
 ];
 
