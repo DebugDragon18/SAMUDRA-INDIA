@@ -11,7 +11,7 @@ export function PotentialFishingZone() {
             </CardHeader>
             <CardContent>
                  <div className="relative h-64 w-full">
-                    <Image src="https://picsum.photos/seed/fishing-zone/800/400" alt="Fishing Zone Map" layout="fill" objectFit="cover" className="rounded-lg" data-ai-hint="map fishing" />
+                    <Image src="https://images.unsplash.com/photo-1695143634680-082bb7426923?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8T2NlYW4lMjBGaXNoZXN8ZW58MHx8fHwxNzU3OTQyMzk4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Fishing Zone Map" fill objectFit="cover" className="rounded-lg" data-ai-hint="map fishing" />
                 </div>
             </CardContent>
         </Card>
