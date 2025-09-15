@@ -5,19 +5,7 @@ import { AppSidebar } from '@/components/layout/app-sidebar';
 import { Button } from '@/components/ui/button';
 import { LiveData } from '@/components/dashboard/potential-fishing-zone/live-data';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
-import { Skeleton } from '@/components/ui/skeleton';
-
-const MapView = dynamic(
-  () =>
-    import('@/components/dashboard/potential-fishing-zone/map-view').then(
-      (mod) => mod.MapView
-    ),
-  {
-    ssr: false,
-    loading: () => <Skeleton className="h-[600px] w-full" />,
-  }
-);
+import { MapViewWrapper } from '@/components/dashboard/potential-fishing-zone/map-view-wrapper';
 
 export default function PotentialFishingZonePage() {
   return (
@@ -42,7 +30,7 @@ export default function PotentialFishingZonePage() {
 
           <div className="grid grid-cols-1 gap-8">
             <LiveData />
-            <MapView />
+            <MapViewWrapper />
           </div>
         </main>
       </div>
