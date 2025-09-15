@@ -5,7 +5,7 @@ import Image from 'next/image';
 const teamMembers = [
   { id: '1', name: 'Asim Malik', role: 'CEO & Oceanographer' },
   { id: '2', name: 'Rugved Narkar', role: 'CTO' },
-  { id: '3',name: 'Maria Flores', role: 'Head of Data Science' },
+  { id: '3',name: 'Sarthak Wawre', role: 'Head of Data Science' },
   { id: '4', name: 'David Chen', role: 'Lead Engineer' },
   { id: '5', name: 'Fatima Ahmed', role: 'Partnerships Lead' },
   { id: '6', name: 'Leo Martinez', role: 'UX/UI Designer' },
