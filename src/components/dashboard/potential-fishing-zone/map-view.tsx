@@ -1,16 +1,9 @@
 "use client";
 
-import dynamic from 'next/dynamic';
-import { Skeleton } from '@/components/ui/skeleton';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
-const MapViewContent = dynamic(
-  () => import('@/components/dashboard/potential-fishing-zone/map-view-content').then((mod) => mod.MapViewContent),
-  {
-    ssr: false,
-    loading: () => <Skeleton className="h-[600px] w-full" />,
-  }
-);
+import { MapContainer, TileLayer, WMSTileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import Link from "next/link";
 
 export function MapView() {
   return (
@@ -20,7 +13,24 @@ export function MapView() {
         <CardDescription>Interactive map showing real-time fishing zone advisories. Click map to view on INCOIS.</CardDescription>
       </CardHeader>
       <CardContent>
-        <MapViewContent />
+        <div className="relative h-[600px] w-full">
+            <Link href="https://incois.gov.in/geoportal/MFASPFZ/index.html" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10">
+                <span className="sr-only">View full map on INCOIS geoportal</span>
+            </Link>
+            <MapContainer center={[20.5937, 78.9629]} zoom={5} scrollWheelZoom={false} className="h-full w-full rounded-lg border">
+                <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <WMSTileLayer
+                url="/incois/geoportal/wms"
+                layers="PFZ:PFZ_Advisory"
+                format="image/png"
+                transparent={true}
+                attribution="INCOIS"
+                />
+            </MapContainer>
+        </div>
       </CardContent>
     </Card>
   );
