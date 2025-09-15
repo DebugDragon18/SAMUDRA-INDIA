@@ -7,7 +7,7 @@ const teamMembers = [
   { id: '2', name: 'Rugved Narkar', role: 'CTO' },
   { id: '3',name: 'Sarthak Wawre', role: 'Head of Data Science' },
   { id: '4', name: 'Shalvi Mate', role: 'Lead Engineer' },
-  { id: '5', name: 'Fatima Ahmed', role: 'Partnerships Lead' },
+  { id: '5', name: 'Leekhit Ingle', role: 'Partnerships Lead' },
   { id: '6', name: 'Leo Martinez', role: 'UX/UI Designer' },
 ];
 
