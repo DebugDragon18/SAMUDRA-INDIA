@@ -1,17 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import dynamic from 'next/dynamic';
-import { Skeleton } from "@/components/ui/skeleton";
-
-const MapViewContent = dynamic(
-  () => import('@/components/dashboard/potential-fishing-zone/map-view-content').then(mod => mod.MapViewContent),
-  {
-    ssr: false,
-    loading: () => <Skeleton className="h-[600px] w-full" />,
-  }
-);
-
+import { MapViewContent } from '@/components/dashboard/potential-fishing-zone/map-view-content';
 
 export function MapView() {
   return (
