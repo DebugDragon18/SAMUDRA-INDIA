@@ -12,7 +12,7 @@ export function CoralReefMapping() {
             </CardHeader>
             <CardContent>
                 <div className="relative h-64 w-full">
-                    <Image src="https://picsum.photos/seed/reef-map/800/400" alt="Coral Reef Map" layout="fill" objectFit="cover" className="rounded-lg" data-ai-hint="map coral reef" />
+                    <Image src="https://images.unsplash.com/photo-1697826208801-6082a2222a07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3JhbCUyMFJlZWYlMjBvY2VhbnxlbnwwfHx8fDE3NTc5NDM3MTR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Coral Reef Map" layout="fill" objectFit="cover" className="rounded-lg" data-ai-hint="coral reef" />
                 </div>
             </CardContent>
         </Card>
