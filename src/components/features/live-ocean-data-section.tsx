@@ -4,13 +4,21 @@ import Image from 'next/image';
 
 export function LiveOceanDataSection() {
   return (
-    <section className="py-16 md:py-24">
-      <div className="container mx-auto">
+    <section className="relative py-16 md:py-24">
+      <Image
+        src="https://images.unsplash.com/photo-1560945959-9a2f2ff04bfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHwzZCUyMG9jZWFufGVufDB8fHx8MTc1ODAyMDk5MXww&ixlib=rb-4.1.0&q=80&w=1080"
+        alt="3D Ocean Background"
+        fill
+        className="object-cover"
+        data-ai-hint="3d ocean"
+      />
+      <div className="absolute inset-0 bg-black/70" />
+      <div className="container relative z-10 mx-auto text-white">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
             Live Ocean Data
           </h2>
-          <p className="mt-4 text-lg text-foreground/80">
+          <p className="mt-4 text-lg text-white/80">
             Access real-time oceanographic data from a vast network of sensors. Monitor key parameters to understand ocean dynamics as they happen.
           </p>
         </div>
@@ -32,7 +40,7 @@ export function LiveOceanDataSection() {
                     </div>
                     <div>
                         <h3 className="text-xl font-bold">Temperature</h3>
-                        <p className="text-foreground/80">Track sea surface and subsurface temperature changes, crucial for climate modeling and marine life studies.</p>
+                        <p className="text-white/80">Track sea surface and subsurface temperature changes, crucial for climate modeling and marine life studies.</p>
                     </div>
                 </div>
                  <div className="flex gap-6">
@@ -41,7 +49,7 @@ export function LiveOceanDataSection() {
                     </div>
                     <div>
                         <h3 className="text-xl font-bold">Salinity</h3>
-                        <p className="text-foreground/80">Monitor salinity levels to understand water density, ocean circulation patterns, and freshwater influences.</p>
+                        <p className="text-white/80">Monitor salinity levels to understand water density, ocean circulation patterns, and freshwater influences.</p>
                     </div>
                 </div>
                  <div className="flex gap-6">
@@ -50,7 +58,7 @@ export function LiveOceanDataSection() {
                     </div>
                     <div>
                         <h3 className="text-xl font-bold">Currents</h3>
-                        <p className="text-foreground/80">Visualize the speed and direction of ocean currents, essential for navigation, safety, and ecosystem analysis.</p>
+                        <p className="text-white/80">Visualize the speed and direction of ocean currents, essential for navigation, safety, and ecosystem analysis.</p>
                     </div>
                 </div>
             </div>
