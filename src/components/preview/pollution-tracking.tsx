@@ -28,24 +28,6 @@ export function PollutionTracking() {
             </div>
           </CardContent>
         </Card>
-        <Card className="shadow-lg">
-          <CardHeader>
-            <CardTitle>Ocean Surface Currents Visualization</CardTitle>
-            <CardDescription>
-              A video visualizing ocean surface currents.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="relative h-[600px] w-full">
-              <iframe
-                src="https://drive.google.com/file/d/1n0NbAEmP05ik_d9toJdoInrNmo6Gktas/preview"
-                className="h-full w-full rounded-lg border"
-                title="Ocean Surface Currents Visualization"
-                allowFullScreen
-              />
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
