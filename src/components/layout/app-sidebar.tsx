@@ -3,6 +3,7 @@ import {
   Home,
   Info,
   LayoutDashboard,
+  Gem,
 } from 'lucide-react';
 import {
   Tooltip,
@@ -15,6 +16,7 @@ import { Logo } from '@/components/logo';
 const navItems = [
     { href: "/", icon: Home, label: "Home" },
     { href: "/about", icon: Info, label: "About" },
+    { href: "/features", icon: Gem, label: "Features" },
     { href: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
 ];
 

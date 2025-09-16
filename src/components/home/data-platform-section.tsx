@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function DataPlatformSection() {
   return (
@@ -30,7 +31,9 @@ export function DataPlatformSection() {
               </span>
             </li>
           </ul>
-          <Button className="mt-8" size="lg">Learn more</Button>
+          <Button className="mt-8" size="lg" asChild>
+            <Link href="/features">Learn more</Link>
+          </Button>
         </div>
         <div className="order-1 md:order-2">
           <Image
