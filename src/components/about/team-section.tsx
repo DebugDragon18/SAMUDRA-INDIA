@@ -5,7 +5,7 @@ import Image from 'next/image';
 const teamMembers = [
   { id: '1', name: 'Asim Malik', role: 'Org. Lead & Designer', imageUrl: 'https://images.unsplash.com/photo-1755519024827-fd05075a7200?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHwlMjBwcm9mZXNzaW9uYWwlMjBtYWxlJTIwaW1hZ2V8ZW58MHx8fHwxNzU4MDE5MjA5fDA&ixlib=rb-4.1.0&q=80&w=1080' },
   { id: '2', name: 'Rugved Narkar', role: 'Frontend Developer', imageUrl: 'https://images.unsplash.com/photo-1597561030767-5ce58b1a2393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvZmZpY2UlMjBib3klMjBpbWFnZSUyMHxlbnwwfHx8fDE3NTgwMTkyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080' },
-  { id: '3',name: 'Sarthak Wawre', role: 'Backend Developer', imageUrl: 'https://picsum.photos/seed/3/200/200' },
+  { id: '3',name: 'Sarthak Wawre', role: 'Backend Developer', imageUrl: 'https://images.unsplash.com/photo-1537006176750-19c08a9af863?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8bWFsZSUyMHBob3Rvc3xlbnwwfHx8fDE3NTgwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080' },
   { id: '4', name: 'Shalvi Mate', role: 'Content Lead & Research', imageUrl: 'https://picsum.photos/seed/4/200/200' },
   { id: '5', name: 'Leekhit Ingle', role: 'Lead Presentation', imageUrl: 'https://picsum.photos/seed/5/200/200' },
   { id: '6', name: 'Swapnil Pophale', role: 'Lead Documentation', imageUrl: 'https://picsum.photos/seed/6/200/200' },
