@@ -37,7 +37,7 @@ export function DataPlatformSection() {
         </div>
         <div className="order-1 md:order-2">
           <Image
-            src="https://storage.googleapis.com/aip-dev-images-public/console-user-images/user-43403310-8637-4f8a-9244-dfc5453d105b/61f22143-4b69-4e4b-84a1-026f39e55132.png"
+            src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8TG9nbyUyMGRlc2lnbnxlbnwwfHx8fDE3NTgwNDkzNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Data scientist working"
             width={600}
             height={400}
