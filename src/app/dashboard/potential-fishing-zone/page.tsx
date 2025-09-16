@@ -12,7 +12,7 @@ const MapView = dynamic(
   () => import('@/components/dashboard/potential-fishing-zone/map-view').then(mod => mod.MapView),
   {
     ssr: false,
-    loading: () => <Skeleton className="h-[300px] w-full" />,
+    loading: () => <Skeleton className="h-[400px] w-full" />,
   }
 );
 
