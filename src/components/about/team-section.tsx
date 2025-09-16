@@ -3,12 +3,12 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
 
 const teamMembers = [
-  { id: '1', name: 'Asim Malik', role: 'Org. Lead & Designer' },
-  { id: '2', name: 'Rugved Narkar', role: 'Frontend Developer' },
-  { id: '3',name: 'Sarthak Wawre', role: 'Backend Developer' },
-  { id: '4', name: 'Shalvi Mate', role: 'Content Lead & Research' },
-  { id: '5', name: 'Leekhit Ingle', role: 'Lead Presentation' },
-  { id: '6', name: 'Swapnil Pophale', role: 'Lead Documentation' },
+  { id: '1', name: 'Asim Malik', role: 'Org. Lead & Designer', imageUrl: 'https://images.unsplash.com/photo-1755519024827-fd05075a7200?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHwlMjBwcm9mZXNzaW9uYWwlMjBtYWxlJTIwaW1hZ2V8ZW58MHx8fHwxNzU4MDE5MjA5fDA&ixlib=rb-4.1.0&q=80&w=1080' },
+  { id: '2', name: 'Rugved Narkar', role: 'Frontend Developer', imageUrl: 'https://picsum.photos/seed/2/200/200' },
+  { id: '3',name: 'Sarthak Wawre', role: 'Backend Developer', imageUrl: 'https://picsum.photos/seed/3/200/200' },
+  { id: '4', name: 'Shalvi Mate', role: 'Content Lead & Research', imageUrl: 'https://picsum.photos/seed/4/200/200' },
+  { id: '5', name: 'Leekhit Ingle', role: 'Lead Presentation', imageUrl: 'https://picsum.photos/seed/5/200/200' },
+  { id: '6', name: 'Swapnil Pophale', role: 'Lead Documentation', imageUrl: 'https://picsum.photos/seed/6/200/200' },
 ];
 
 export function TeamSection() {
@@ -29,7 +29,7 @@ export function TeamSection() {
               <CardContent className="flex flex-col items-center p-0">
                 <Avatar className="h-24 w-24">
                   <AvatarImage
-                    src={`https://picsum.photos/seed/${member.id}/200/200`}
+                    src={member.imageUrl}
                     alt={member.name}
                     data-ai-hint="person portrait"
                   />
