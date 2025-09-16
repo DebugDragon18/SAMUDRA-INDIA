@@ -25,8 +25,8 @@ export function HeroSection() {
           <Button size="lg" asChild>
             <Link href="/dashboard">Explore the data</Link>
           </Button>
-          <Button size="lg" variant="secondary">
-            Request a demo
+          <Button size="lg" variant="secondary" asChild>
+            <Link href="/preview">Request a demo</Link>
           </Button>
         </div>
       </div>
