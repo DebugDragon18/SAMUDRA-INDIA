@@ -4,11 +4,11 @@ export function AboutHero() {
   return (
     <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
       <Image
-        src="https://picsum.photos/seed/earth-space/1780/1068"
-        alt="Earth from space"
+        src="https://images.unsplash.com/photo-1488278905738-514111aa236c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxPY2VhbnxlbnwwfHx8fDE3NTgwMjA4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        alt="Ocean waves"
         fill
         className="object-cover"
-        data-ai-hint="earth space"
+        data-ai-hint="ocean waves"
         priority
       />
       <div className="absolute inset-0 bg-black/50" />
