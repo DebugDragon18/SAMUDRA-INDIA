@@ -29,7 +29,7 @@ export function FisheriesDataSection() {
         </div>
         <div className="order-1 md:order-2">
           <Image
-            src="https://images.unsplash.com/photo-1599591398323-35616f2c347b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaXNoaW5nJTIwYm9hdHxlbnwwfHx8fDE3NTgwMjA0NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="https://images.unsplash.com/photo-1558287959-9ef29358d6ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8ZmlzaGVzfGVufDB8fHx8MTc1ODAwMjYwM3ww&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Fishing boat on the ocean"
             width={800}
             height={600}
