@@ -37,12 +37,12 @@ export function DataPlatformSection() {
         </div>
         <div className="order-1 md:order-2">
           <Image
-            src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvY2VhbiUyMGFuaW1hbHN8ZW58MHx8fHwxNzU3OTMzMTU4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="https://storage.googleapis.com/aip-dev-images-public/console-user-images/user-43403310-8637-4f8a-9244-dfc5453d105b/61f22143-4b69-4e4b-84a1-026f39e55132.png"
             alt="Data scientist working"
             width={600}
             height={400}
             className="rounded-lg object-cover"
-            data-ai-hint="ocean animals"
+            data-ai-hint="logo abstract"
           />
         </div>
       </div>
