@@ -44,7 +44,7 @@ export function FeedbackSection() {
           </p>
         </div>
 
-        <Card className="mt-12 mx-auto max-w-2xl border-white/10 bg-card">
+        <Card className="mt-12 mx-auto max-w-2xl bg-transparent border-primary/20">
           <CardHeader>
             <CardTitle>Feedback Form</CardTitle>
             <CardDescription>
@@ -78,6 +78,7 @@ export function FeedbackSection() {
                   name="feedback-message"
                   placeholder="Tell us what's on your mind..."
                   required
+                  className="bg-transparent"
                 />
               </div>
 

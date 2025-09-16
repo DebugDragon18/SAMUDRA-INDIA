@@ -32,7 +32,7 @@ const newsArticles = [
 
 export function LatestNewsSection() {
   return (
-    <section className="py-16 md:py-24 bg-white/5">
+    <section className="py-16 md:py-24">
       <div className="container mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
@@ -44,7 +44,7 @@ export function LatestNewsSection() {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {newsArticles.map((article) => (
-            <Card key={article.id} className="flex flex-col overflow-hidden border-white/10 bg-card">
+            <Card key={article.id} className="flex flex-col overflow-hidden bg-transparent border-primary/20">
               <div className="relative h-48 w-full">
                 <Image
                   src={article.imageUrl}
