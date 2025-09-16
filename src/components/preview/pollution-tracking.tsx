@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 export function PollutionTracking() {
   return (
-    <section className="bg-white/5 py-16 md:py-24">
+    <section className="bg-primary/10 py-16 md:py-24">
       <div className="container mx-auto space-y-8">
         <Card className="shadow-lg">
           <CardHeader>
