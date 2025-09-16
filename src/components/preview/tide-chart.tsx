@@ -14,15 +14,15 @@ export function TideChart() {
         <div className="container mx-auto">
             <Card className="shadow-lg">
             <CardHeader>
-                <CardTitle>Live Satellite Map</CardTitle>
-                <CardDescription>Explore a live satellite view of the earth.</CardDescription>
+                <CardTitle>Live Wind Flow Map</CardTitle>
+                <CardDescription>Explore a live wind flow map from AccuWeather.</CardDescription>
             </CardHeader>
             <CardContent>
                 <div className="relative h-[600px] w-full">
                     <iframe
-                        src="https://zoom.earth/maps/satellite/#view=12.56,49.94,5z"
+                        src="https://www.accuweather.com/en/in/national/wind-flow"
                         className="h-full w-full rounded-lg border"
-                        title="Live Satellite Map"
+                        title="Live Wind Flow Map"
                     />
                 </div>
             </CardContent>
