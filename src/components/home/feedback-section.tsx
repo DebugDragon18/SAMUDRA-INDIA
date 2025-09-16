@@ -33,7 +33,7 @@ export function FeedbackSection() {
   };
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 bg-primary/5">
       <div className="container mx-auto">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
@@ -44,7 +44,7 @@ export function FeedbackSection() {
           </p>
         </div>
 
-        <Card className="mt-12 mx-auto max-w-2xl bg-transparent border-primary/20">
+        <Card className="mt-12 mx-auto max-w-2xl bg-background/50 border-primary/20">
           <CardHeader>
             <CardTitle>Feedback Form</CardTitle>
             <CardDescription>

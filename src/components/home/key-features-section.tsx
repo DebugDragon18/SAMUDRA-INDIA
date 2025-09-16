@@ -26,7 +26,7 @@ const features = [
 
 export function KeyFeaturesSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 bg-primary/5">
       <div className="container mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
@@ -38,7 +38,7 @@ export function KeyFeaturesSection() {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (
-            <Card key={feature.title} className="bg-transparent border-primary/20">
+            <Card key={feature.title} className="bg-background/50 border-primary/20">
               <CardHeader>
                 <div className="flex flex-col items-start gap-4">
                   {feature.icon}

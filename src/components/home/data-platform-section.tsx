@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export function DataPlatformSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 bg-primary/5">
       <div className="container mx-auto grid grid-cols-1 items-center gap-8 md:grid-cols-2">
         <div className="order-2 md:order-1">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
