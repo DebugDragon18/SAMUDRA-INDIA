@@ -42,6 +42,10 @@ const nextConfig: NextConfig = {
         source: '/incois/:path*',
         destination: 'https://incois.gov.in/:path*',
       },
+      {
+        source: '/erddap/wms/:path*',
+        destination: 'https://erddap.incois.gov.in/erddap/wms/:path*',
+      }
     ]
   },
 };

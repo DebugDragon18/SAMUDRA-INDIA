@@ -7,6 +7,7 @@ import { LiveData } from '@/components/dashboard/potential-fishing-zone/live-dat
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Skeleton } from '@/components/ui/skeleton';
+import { ChlorophyllMap } from '@/components/dashboard/potential-fishing-zone/chlorophyll-map';
 
 const MapView = dynamic(
   () => import('@/components/dashboard/potential-fishing-zone/map-view').then(mod => mod.MapView),
@@ -41,6 +42,7 @@ export default function PotentialFishingZonePage() {
           <div className="grid grid-cols-1 gap-8">
             <LiveData />
             <MapView />
+            <ChlorophyllMap />
           </div>
         </main>
       </div>
