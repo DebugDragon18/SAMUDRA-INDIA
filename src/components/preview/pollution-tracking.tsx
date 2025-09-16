@@ -12,17 +12,17 @@ export function PollutionTracking() {
       <div className="container mx-auto">
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle>Ocean Pollution Visualization</CardTitle>
+            <CardTitle>Earth Ocean Salinity Map</CardTitle>
             <CardDescription>
-              A video showcasing data on ocean pollution.
+              A map showcasing data on ocean salinity.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="relative h-[600px] w-full">
               <iframe
-                src="https://drive.google.com/file/d/1n0NbAEmP05ik_d9toJdoInrNmo6GktaswAlwplWMIZA/preview"
+                src="https://svs.gsfc.nasa.gov/vis/a010000/a011200/a011211/index.html"
                 className="h-full w-full rounded-lg border"
-                title="Ocean Pollution Visualization"
+                title="Earth Ocean Salinity Map"
                 allowFullScreen
               />
             </div>
