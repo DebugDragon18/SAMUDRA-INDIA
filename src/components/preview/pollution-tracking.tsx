@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import Image from 'next/image';
 
 export function PollutionTracking() {
   return (
@@ -12,18 +13,19 @@ export function PollutionTracking() {
       <div className="container mx-auto space-y-8">
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle>Earth Ocean Salinity Map</CardTitle>
+            <CardTitle>Ocean Pollution Tracking</CardTitle>
             <CardDescription>
-              A map showcasing data on ocean salinity.
+              Visualizing the impact of pollution on our oceans.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="relative h-[600px] w-full">
-              <iframe
-                src="https://svs.gsfc.nasa.gov/vis/a010000/a011200/a011211/index.html"
-                className="h-full w-full rounded-lg border"
-                title="Earth Ocean Salinity Map"
-                allowFullScreen
+              <Image
+                src="https://picsum.photos/seed/ocean-pollution/1200/600"
+                alt="Ocean pollution"
+                fill
+                className="object-cover rounded-lg"
+                data-ai-hint="ocean pollution"
               />
             </div>
           </CardContent>
