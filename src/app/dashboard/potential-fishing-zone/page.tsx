@@ -7,14 +7,21 @@ import { LiveData } from '@/components/dashboard/potential-fishing-zone/live-dat
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Skeleton } from '@/components/ui/skeleton';
-import { ChlorophyllMap } from '@/components/dashboard/potential-fishing-zone/chlorophyll-map';
 
 const MapView = dynamic(
   () => import('@/components/dashboard/potential-fishing-zone/map-view').then(mod => mod.MapView),
   {
     ssr: false,
-    loading: () => <Skeleton className="h-[600px] w-full" />,
+    loading: () => <Skeleton className="h-[300px] w-full" />,
   }
+);
+
+const ChlorophyllMap = dynamic(
+    () => import('@/components/dashboard/potential-fishing-zone/chlorophyll-map').then(mod => mod.ChlorophyllMap),
+    {
+      ssr: false,
+      loading: () => <Skeleton className="h-[600px] w-full" />,
+    }
 );
 
 
