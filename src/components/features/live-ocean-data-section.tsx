@@ -17,7 +17,7 @@ export function LiveOceanDataSection() {
         <div className="mt-12 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div>
                  <Image
-                    src="https://picsum.photos/seed/ocean-buoy/800/600"
+                    src="https://images.unsplash.com/photo-1488278905738-514111aa236c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxN3x8T2NlYW58ZW58MHx8fHwxNzU4MDAyNDA0fDA&ixlib=rb-4.1.0&q=80&w=1080"
                     alt="Ocean sensor buoy"
                     width={800}
                     height={600}
