@@ -12,17 +12,18 @@ export function PollutionTracking() {
       <div className="container mx-auto">
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle>Ocean Plastic Tracker</CardTitle>
+            <CardTitle>Ocean Surface Currents</CardTitle>
             <CardDescription>
-              Explore The Ocean Cleanup's interactive plastic tracker.
+              A visualization of ocean surface currents from NASA.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="relative h-[600px] w-full">
               <iframe
-                src="https://theoceancleanup.com/plastic-tracker/"
+                src="https://svs.gsfc.nasa.gov/vis/a030000/a030400/a030493/index.html"
                 className="h-full w-full rounded-lg border"
-                title="The Ocean Cleanup Plastic Tracker"
+                title="NASA Perpetual Ocean"
+                allowFullScreen
               />
             </div>
           </CardContent>
