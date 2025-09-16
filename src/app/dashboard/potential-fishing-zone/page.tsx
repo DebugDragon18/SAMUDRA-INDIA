@@ -16,14 +16,6 @@ const MapView = dynamic(
   }
 );
 
-const ChlorophyllMap = dynamic(
-    () => import('@/components/dashboard/potential-fishing-zone/chlorophyll-map').then(mod => mod.ChlorophyllMap),
-    {
-      ssr: false,
-      loading: () => <Skeleton className="h-[600px] w-full" />,
-    }
-);
-
 
 export default function PotentialFishingZonePage() {
   return (
@@ -49,7 +41,6 @@ export default function PotentialFishingZonePage() {
           <div className="grid grid-cols-1 gap-8">
             <LiveData />
             <MapView />
-            <ChlorophyllMap />
           </div>
         </main>
       </div>
