@@ -4,11 +4,11 @@ export function FeaturesHero() {
   return (
     <section className="relative h-[50vh] min-h-[300px] overflow-hidden">
       <Image
-        src="https://picsum.photos/seed/features-hero/1800/600"
+        src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvY2VhbiUyMGFuaW1hbHN8ZW58MHx8fHwxNzU3OTMzMTU4fDA&ixlib=rb-4.1.0&q=80&w=1080"
         alt="Ocean data visualization"
         fill
         className="object-cover"
-        data-ai-hint="ocean abstract"
+        data-ai-hint="ocean animals"
         priority
       />
       <div className="absolute inset-0 bg-black/60" />
