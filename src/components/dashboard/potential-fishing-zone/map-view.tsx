@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapContainer, TileLayer, WMSTileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Link from "next/link";
 
@@ -14,19 +13,10 @@ export function MapView() {
       </CardHeader>
       <CardContent>
         <div className="relative h-[600px] w-full">
-            <MapContainer center={[20.5937, 78.9629]} zoom={5} scrollWheelZoom={false} className="h-full w-full rounded-lg border">
-                <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <WMSTileLayer
-                url="/incois/geoportal/wms"
-                layers="PFZ:PFZ_Advisory"
-                format="image/png"
-                transparent={true}
-                attribution="INCOIS"
-                />
-            </MapContainer>
+            {/* Map container has been removed to prevent initialization errors. */}
+            <div className="flex h-full w-full items-center justify-center rounded-lg border bg-muted">
+                <p className="text-muted-foreground">Map view is currently unavailable.</p>
+            </div>
         </div>
       </CardContent>
     </Card>
