@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Thermometer, Waves, Wind } from 'lucide-react';
 import Image from 'next/image';
 
@@ -6,7 +5,7 @@ export function LiveOceanDataSection() {
   return (
     <section className="relative py-16 md:py-24">
       <Image
-        src="https://images.unsplash.com/photo-1560945959-9a2f2ff04bfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHwzZCUyMG9jZWFufGVufDB8fHx8MTc1ODAyMDk5MXww&ixlib=rb-4.1.0&q=80&w=1080"
+        src="https://images.unsplash.com/photo-1560945959-9a2f2ff04bfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHwzZCUyMG9jZWFufGVufDB8fHx8fDE3NTgwMjA5OTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
         alt="3D Ocean Background"
         fill
         className="object-cover"
