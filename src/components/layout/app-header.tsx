@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Logo } from '@/components/logo';
 
 const navItems = [
@@ -56,6 +56,7 @@ export function AppHeader() {
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="flex flex-col bg-background">
+            <SheetTitle className="sr-only">Menu</SheetTitle>
             <nav className="grid gap-4 text-lg font-medium">
               <Link href="#" className="mb-4">
                 <Logo />
