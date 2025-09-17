@@ -13,7 +13,7 @@ const teamMembers = [
 
 export function TeamSection() {
   return (
-    <section className="py-16 md:py-24" style={{ backgroundColor: 'hsl(210 50% 95%)' }}>
+    <section className="py-16 md:py-24" style={{ backgroundColor: 'hsl(210 80% 96%)' }}>
       <div className="container mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">

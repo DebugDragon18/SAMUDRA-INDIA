@@ -10,7 +10,7 @@ import { FeedbackSection } from '@/components/home/feedback-section';
 
 export default function HomePage() {
   return (
-    <div className="flex min-h-screen w-full flex-col" style={{ backgroundColor: 'hsl(210 50% 95%)' }}>
+    <div className="flex min-h-screen w-full flex-col" style={{ backgroundColor: 'hsl(210 80% 96%)' }}>
       <AppHeader />
       <main className="flex-1">
         <HeroSection />
