@@ -61,7 +61,7 @@ export function LatestNewsSection() {
                 <p className="text-sm text-foreground/80">{article.description}</p>
               </CardContent>
               <CardFooter>
-                <Button asChild variant="link" className="p-0 h-auto">
+                <Button variant="link" className="p-0 h-auto">
                   <Link href={article.link}>
                     Read More
                   </Link>

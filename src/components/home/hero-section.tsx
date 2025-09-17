@@ -22,10 +22,10 @@ export function HeroSection() {
           Making the world’s ocean data accessible and useful. A neutral, open-source, and not-for-profit platform for collaboration and innovation.
         </p>
         <div className="mt-8 flex gap-4">
-          <Button size="lg" asChild>
+          <Button size="lg">
             <Link href="/dashboard">Explore the data</Link>
           </Button>
-          <Button size="lg" variant="secondary" asChild>
+          <Button size="lg" variant="secondary">
             <Link href="/preview">Request a demo</Link>
           </Button>
         </div>

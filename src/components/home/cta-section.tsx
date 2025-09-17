@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function CtaSection() {
   return (
@@ -11,7 +12,9 @@ export function CtaSection() {
           Join our community of ocean innovators and start making a difference today.
         </p>
         <div className="mt-8 flex justify-center gap-4">
-          <Button size="lg">Get Started for Free</Button>
+          <Button size="lg">
+            <Link href="/dashboard">Get Started for Free</Link>
+          </Button>
           <Button size="lg" variant="outline">
             Talk to an Expert
           </Button>

@@ -41,7 +41,7 @@ export function AppHeader() {
         <Button variant="outline" className="hidden md:flex">
           Request a demo
         </Button>
-        <Button asChild>
+        <Button>
           <Link href="/login">Sign In</Link>
         </Button>
         <Sheet>
