@@ -5,7 +5,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import Image from 'next/image';
 
 export function PollutionTracking() {
   return (
@@ -13,19 +12,17 @@ export function PollutionTracking() {
       <div className="container mx-auto space-y-8">
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle>Ocean Pollution Tracking</CardTitle>
+            <CardTitle>Live Weather Map</CardTitle>
             <CardDescription>
-              Visualizing the impact of pollution on our oceans.
+              Explore real-time rain and wind conditions from Windy.com.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="relative h-[600px] w-full">
-              <Image
-                src="https://picsum.photos/seed/ocean-pollution/1200/600"
-                alt="Ocean pollution"
-                fill
-                className="object-cover rounded-lg"
-                data-ai-hint="ocean pollution"
+              <iframe
+                src="https://www.windy.com/-Rain-thunder-rain?rain,18.521,73.850,5"
+                className="h-full w-full rounded-lg border"
+                title="Live Weather Map"
               />
             </div>
           </CardContent>
