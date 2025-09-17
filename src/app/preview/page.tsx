@@ -1,7 +1,6 @@
 import { AppHeader } from '@/components/layout/app-header';
 import { Footer } from '@/components/layout/footer';
 import { TideChart } from '@/components/preview/tide-chart';
-import { PollutionTracking } from '@/components/preview/pollution-tracking';
 import { AquaLinkMap } from '@/components/preview/aqualink-map';
 
 export default function PreviewPage() {
@@ -18,7 +17,6 @@ export default function PreviewPage() {
             </div>
         </section>
         <TideChart />
-        <PollutionTracking />
         <AquaLinkMap />
       </main>
       <Footer />
