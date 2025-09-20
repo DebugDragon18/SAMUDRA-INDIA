@@ -7,25 +7,25 @@ import { Globe, Compass, LifeBuoy, ThermometerSun } from 'lucide-react';
 const facts = [
   {
     id: "vast-oceans",
-    icon: <Globe className="h-5 w-5" />,
+    icon: <Globe className="h-4 w-4" />,
     title: 'Vast Oceans',
-    description: "Oceans cover over 70% of the Earth's surface, more than all continents combined. The five main oceans are the Pacific, Atlantic, Indian, Southern, and Arctic. The Pacific is the largest and deepest, with its deepest point, the Mariana Trench, reaching about 36,000 feet.",
+    description: "Oceans cover over 70% of the Earth's surface—more than all the continents combined. The five main oceans are the Pacific, Atlantic, Indian, Southern, and Arctic. The Pacific is the largest and deepest, with its deepest point, the Mariana Trench, reaching about 36,000 feet.",
   },
   {
     id: "unexplored",
-    icon: <Compass className="h-5 w-5" />,
+    icon: <Compass className="h-4 w-4" />,
     title: 'Largely Unexplored',
     description: 'Despite their size, humans have explored less than 5% of the ocean, leaving countless discoveries to be made.',
   },
   {
     id: "biodiversity",
-    icon: <LifeBuoy className="h-5 w-5" />,
+    icon: <LifeBuoy className="h-4 w-4" />,
     title: 'Incredible Biodiversity',
     description: 'The ocean is home to about 80% of all life on Earth. Scientists estimate that as many as two-thirds of marine species are still unknown.',
   },
   {
     id: "climate-regulator",
-    icon: <ThermometerSun className="h-5 w-5" />,
+    icon: <ThermometerSun className="h-4 w-4" />,
     title: 'Climate Regulator',
     description: 'Oceans have absorbed more than 90% of the excess heat from climate change and absorb about 30% of the carbon dioxide released into the atmosphere.',
   },
@@ -55,7 +55,7 @@ export function MarineFactsSection() {
             </TabsList>
             {facts.map((fact) => (
               <TabsContent key={fact.id} value={fact.id}>
-                <Card className="bg-background/50 border-primary/20 mt-4">
+                <Card className="bg-primary/10 border-primary/20 mt-4">
                   <CardContent className="p-6 text-center text-foreground/80">
                     <p>{fact.description}</p>
                   </CardContent>
