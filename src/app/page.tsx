@@ -8,6 +8,7 @@ import { LatestNewsSection } from '@/components/home/latest-news-section';
 import { KeyFeaturesSection } from '@/components/home/key-features-section';
 import { FeedbackSection } from '@/components/home/feedback-section';
 import { MarineFactsSection } from '@/components/home/marine-facts-section';
+import { NgoSection } from '@/components/home/ngo-section';
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         <CtaSection />
         <LatestNewsSection />
         <MarineFactsSection />
+        <NgoSection />
         <TeamSection />
         <FeedbackSection />
       </main>
