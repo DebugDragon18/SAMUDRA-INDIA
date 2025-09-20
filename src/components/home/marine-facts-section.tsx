@@ -1,26 +1,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Globe, Fish, Mountain, Search } from 'lucide-react';
+import { Globe, Waves, Mountain, Compass } from 'lucide-react';
 
 const facts = [
   {
     icon: <Globe className="h-6 w-6 text-primary" />,
     title: 'Vast Oceans',
-    description: "Oceans cover more than 70% of the Earth's surface, yet they remain largely unexplored.",
+    description: "Oceans cover more than 70% of the Earth's surface, which is more than all the continents combined. There are five main oceans: Pacific, Atlantic, Indian, Southern, and Arctic.",
   },
   {
-    icon: <Fish className="h-6 w-6 text-primary" />,
-    title: 'Abundant Life',
-    description: 'The vast majority of life on Earth is aquatic, with a stunning diversity of species.',
+    icon: <Waves className="h-6 w-6 text-primary" />,
+    title: 'The Pacific',
+    description: 'The Pacific Ocean is the largest and deepest, covering more area than all the land on Earth.',
   },
   {
     icon: <Mountain className="h-6 w-6 text-primary" />,
-    title: 'Hidden Ranges',
-    description: "The world's longest mountain chain, the Mid-Ocean Ridge, is almost entirely underwater.",
+    title: 'Mariana Trench',
+    description: "The Pacific's deepest point is the Mariana Trench, reaching about 36,000 feet (11,000 meters).",
   },
   {
-    icon: <Search className="h-6 w-6 text-primary" />,
-    title: 'Deep Mysteries',
-    description: 'Humans have explored less than 5% of the ocean, leaving countless discoveries to be made.',
+    icon: <Compass className="h-6 w-6 text-primary" />,
+    title: 'Largely Unexplored',
+    description: 'Despite their size, humans have explored less than 5% of the ocean, leaving countless discoveries to be made.',
   },
 ];
 
