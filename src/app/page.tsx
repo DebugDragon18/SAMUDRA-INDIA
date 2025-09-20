@@ -7,6 +7,7 @@ import { TeamSection } from '@/components/about/team-section';
 import { LatestNewsSection } from '@/components/home/latest-news-section';
 import { KeyFeaturesSection } from '@/components/home/key-features-section';
 import { FeedbackSection } from '@/components/home/feedback-section';
+import { MarineFactsSection } from '@/components/home/marine-facts-section';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <HeroSection />
         <DataPlatformSection />
         <KeyFeaturesSection />
+        <MarineFactsSection />
         <CtaSection />
         <LatestNewsSection />
         <TeamSection />
