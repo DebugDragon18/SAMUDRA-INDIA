@@ -7,10 +7,11 @@ import { TeamSection } from '@/components/about/team-section';
 import { LatestNewsSection } from '@/components/home/latest-news-section';
 import { KeyFeaturesSection } from '@/components/home/key-features-section';
 import { FeedbackSection } from '@/components/home/feedback-section';
+import { MarineFactsSection } from '@/components/home/marine-facts-section';
 
 export default function HomePage() {
   return (
-    <div className="flex min-h-screen w-full flex-col" style={{ backgroundColor: 'hsl(210 80% 96%)' }}>
+    <div className="flex min-h-screen w-full flex-col" style={{ backgroundColor: 'hsl(210, 80%, 98%)' }}>
       <AppHeader />
       <main className="flex-1">
         <HeroSection />
@@ -18,6 +19,7 @@ export default function HomePage() {
         <KeyFeaturesSection />
         <CtaSection />
         <LatestNewsSection />
+        <MarineFactsSection />
         <TeamSection />
         <FeedbackSection />
       </main>
