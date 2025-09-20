@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Globe, Compass } from 'lucide-react';
+import { Globe, Compass, LifeBuoy, ThermometerSun } from 'lucide-react';
 
 const facts = [
   {
@@ -11,6 +11,16 @@ const facts = [
     icon: <Compass className="h-6 w-6 text-primary" />,
     title: 'Largely Unexplored',
     description: 'Despite their size, humans have explored less than 5% of the ocean, leaving countless discoveries to be made.',
+  },
+  {
+    icon: <LifeBuoy className="h-6 w-6 text-primary" />,
+    title: 'Incredible Biodiversity',
+    description: 'The ocean is home to about 80% of all life on Earth. Scientists estimate that as many as two-thirds of marine species are still unknown.',
+  },
+  {
+    icon: <ThermometerSun className="h-6 w-6 text-primary" />,
+    title: 'Climate Regulator',
+    description: 'Oceans have absorbed more than 90% of the excess heat from climate change and absorb about 30% of the carbon dioxide released into the atmosphere.',
   },
 ];
 
@@ -26,7 +36,7 @@ export function MarineFactsSection() {
             Discover incredible truths about our planet's oceans.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {facts.map((fact) => (
             <Card key={fact.title} className="text-center bg-background/50 border-primary/20">
               <CardHeader>
