@@ -1,21 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Globe, Waves, Mountain, Compass } from 'lucide-react';
+import { Globe, Compass } from 'lucide-react';
 
 const facts = [
   {
     icon: <Globe className="h-6 w-6 text-primary" />,
     title: 'Vast Oceans',
-    description: "Oceans cover more than 70% of the Earth's surface, which is more than all the continents combined. There are five main oceans: Pacific, Atlantic, Indian, Southern, and Arctic.",
-  },
-  {
-    icon: <Waves className="h-6 w-6 text-primary" />,
-    title: 'The Pacific',
-    description: 'The Pacific Ocean is the largest and deepest, covering more area than all the land on Earth.',
-  },
-  {
-    icon: <Mountain className="h-6 w-6 text-primary" />,
-    title: 'Mariana Trench',
-    description: "The Pacific's deepest point is the Mariana Trench, reaching about 36,000 feet (11,000 meters).",
+    description: "Oceans cover over 70% of the Earth's surface, more than all continents combined. The five main oceans are the Pacific, Atlantic, Indian, Southern, and Arctic. The Pacific is the largest and deepest, with its deepest point, the Mariana Trench, reaching about 36,000 feet.",
   },
   {
     icon: <Compass className="h-6 w-6 text-primary" />,
@@ -36,7 +26,7 @@ export function MarineFactsSection() {
             Discover incredible truths about our planet's oceans.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
           {facts.map((fact) => (
             <Card key={fact.title} className="text-center bg-background/50 border-primary/20">
               <CardHeader>
