@@ -17,13 +17,13 @@ export default function HomePage() {
       <AppHeader />
       <main className="flex-1">
         <HeroSection />
-        <BiodiversityRiskScore />
         <DataPlatformSection />
         <KeyFeaturesSection />
         <CtaSection />
         <LatestNewsSection />
         <MarineFactsSection />
         <NgoSection />
+        <BiodiversityRiskScore />
         <TeamSection />
         <FeedbackSection />
       </main>
