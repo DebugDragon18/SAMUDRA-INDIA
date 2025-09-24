@@ -9,6 +9,7 @@ import { KeyFeaturesSection } from '@/components/home/key-features-section';
 import { FeedbackSection } from '@/components/home/feedback-section';
 import { MarineFactsSection } from '@/components/home/marine-facts-section';
 import { NgoSection } from '@/components/home/ngo-section';
+import { BiodiversityRiskScore } from '@/components/home/biodiversity-risk-score';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <AppHeader />
       <main className="flex-1">
         <HeroSection />
+        <BiodiversityRiskScore />
         <DataPlatformSection />
         <KeyFeaturesSection />
         <CtaSection />
