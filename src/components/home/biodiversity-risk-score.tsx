@@ -5,6 +5,7 @@ import { RadialBar, RadialBarChart, PolarAngleAxis } from 'recharts';
 import { Waves } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { useState, useEffect } from 'react';
 
 const riskScore = 58; // Mock data
 const aiInsight = "Coral bleaching risk is rising in the Andaman region due to a 1.2°C SST increase.";
@@ -31,6 +32,11 @@ const chartData = [
 
 export function BiodiversityRiskScore() {
   const riskColorClass = getRiskColor(riskScore);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <section className="py-16 md:py-24">
@@ -46,6 +52,7 @@ export function BiodiversityRiskScore() {
                     </CardHeader>
                     <CardContent className="flex flex-col items-center">
                         <div className="relative h-48 w-48">
+                          {isClient && (
                             <RadialBarChart
                                 width={192}
                                 height={192}
@@ -71,6 +78,7 @@ export function BiodiversityRiskScore() {
                                     className="fill-primary"
                                 />
                             </RadialBarChart>
+                          )}
                              <div className="absolute inset-0 flex flex-col items-center justify-center">
                                 <span className={cn("text-5xl font-bold", riskColorClass)}>{riskScore}</span>
                                 <span className="text-sm text-muted-foreground">/ 100</span>
