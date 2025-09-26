@@ -1,20 +1,11 @@
 "use client";
 
 import { useState } from 'react';
-import dynamic from 'next/dynamic';
 import { AppHeader } from '@/components/layout/app-header';
 import { AppSidebar } from '@/components/layout/app-sidebar';
-import { Skeleton } from '@/components/ui/skeleton';
 import { LocationData, molecularData } from '@/lib/molecular-data';
 import { LocationDetails } from '@/components/dashboard/molecular-biodiversity/location-details';
-
-const MolecularBiodiversityMap = dynamic(
-  () => import('@/components/dashboard/molecular-biodiversity/molecular-map').then(mod => mod.MolecularBiodiversityMap),
-  {
-    ssr: false,
-    loading: () => <Skeleton className="h-[calc(100vh-200px)] w-full" />,
-  }
-);
+import { MolecularBiodiversityMap } from '@/components/dashboard/molecular-biodiversity/molecular-map';
 
 export default function MolecularBiodiversityPage() {
   const [selectedLocation, setSelectedLocation] = useState<LocationData | null>(molecularData[0]);
