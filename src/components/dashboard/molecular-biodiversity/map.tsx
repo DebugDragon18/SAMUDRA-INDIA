@@ -1,8 +1,9 @@
 "use client";
 
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { useEffect, useRef } from 'react';
+import type { Map as LeafletMap } from 'leaflet';
 import { LocationData } from '@/lib/molecular-data';
 
 // Fix for default icon not showing
@@ -25,20 +26,6 @@ const activeIcon = new L.Icon({
 
 const defaultIcon = new L.Icon.Default();
 
-
-interface MapUpdaterProps {
-  location: LocationData | null;
-}
-
-const MapUpdater = ({ location }: MapUpdaterProps) => {
-  const map = useMap();
-  if (location) {
-    map.flyTo([location.lat, location.lon], 8);
-  }
-  return null;
-}
-
-
 interface MapProps {
   locations: LocationData[];
   onSelectLocation: (location: LocationData) => void;
@@ -46,29 +33,50 @@ interface MapProps {
 }
 
 export function Map({ locations, onSelectLocation, selectedLocation }: MapProps) {
-  const center: L.LatLngExpression = selectedLocation 
-    ? [selectedLocation.lat, selectedLocation.lon] 
-    : [15, 85]; // Default center of India
+  const mapRef = useRef<HTMLDivElement>(null);
+  const leafletMapRef = useRef<LeafletMap | null>(null);
+  const markersRef = useRef<L.Marker[]>([]);
 
-  return (
-    <MapContainer center={center} zoom={5} scrollWheelZoom={false} className="h-full w-full rounded-lg">
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      {locations.map(loc => (
-        <Marker 
-            key={loc.id} 
-            position={[loc.lat, loc.lon]} 
-            eventHandlers={{ click: () => onSelectLocation(loc) }}
-            icon={selectedLocation?.id === loc.id ? activeIcon : defaultIcon}
-        >
-          <Popup>
-            {loc.name}
-          </Popup>
-        </Marker>
-      ))}
-      <MapUpdater location={selectedLocation} />
-    </MapContainer>
-  );
+  useEffect(() => {
+    if (mapRef.current && !leafletMapRef.current) {
+        const center: L.LatLngExpression = selectedLocation
+            ? [selectedLocation.lat, selectedLocation.lon]
+            : [15, 85];
+        
+        leafletMapRef.current = L.map(mapRef.current).setView(center, 5);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(leafletMapRef.current);
+    }
+  }, []); // Run only once
+
+  useEffect(() => {
+      if (leafletMapRef.current) {
+        // Clear existing markers
+        markersRef.current.forEach(marker => marker.remove());
+        markersRef.current = [];
+
+        // Add new markers
+        locations.forEach(loc => {
+            const marker = L.marker([loc.lat, loc.lon], {
+                icon: selectedLocation?.id === loc.id ? activeIcon : defaultIcon
+            })
+            .addTo(leafletMapRef.current!)
+            .bindPopup(loc.name)
+            .on('click', () => onSelectLocation(loc));
+
+            markersRef.current.push(marker);
+        });
+      }
+  }, [locations, selectedLocation, onSelectLocation]);
+
+  useEffect(() => {
+    if (leafletMapRef.current && selectedLocation) {
+        leafletMapRef.current.flyTo([selectedLocation.lat, selectedLocation.lon], 8);
+    }
+  }, [selectedLocation]);
+
+
+  return <div ref={mapRef} className="h-full w-full rounded-lg" />;
 }
