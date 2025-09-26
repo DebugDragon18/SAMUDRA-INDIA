@@ -5,6 +5,7 @@ import { PotentialFishingZone } from '@/components/dashboard/potential-fishing-z
 import { CoralReefMapping } from '@/components/dashboard/coral-reef-mapping';
 import { OceanData } from '@/components/dashboard/ocean-data';
 import { AiPredictions } from '@/components/dashboard/ai-predictions';
+import { MolecularBiodiversity } from '@/components/dashboard/molecular-biodiversity';
 
 
 export default function DashboardPage() {
@@ -26,6 +27,9 @@ export default function DashboardPage() {
               </div>
               <div className="col-span-1 row-start-2 md:row-start-auto">
                 <CoralReefMapping />
+              </div>
+              <div className="col-span-1">
+                <MolecularBiodiversity />
               </div>
               <div className="col-span-1 lg:col-span-2">
                 <OceanData />

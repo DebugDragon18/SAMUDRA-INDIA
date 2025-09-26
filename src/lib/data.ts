@@ -1,4 +1,4 @@
-import { Fish, Waves, Sprout, BrainCircuit } from 'lucide-react';
+import { Fish, Waves, Sprout, BrainCircuit, Dna } from 'lucide-react';
 
 export const statsCardsData = [
   {

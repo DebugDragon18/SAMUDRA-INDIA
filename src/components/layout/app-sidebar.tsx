@@ -4,6 +4,7 @@ import {
   Info,
   LayoutDashboard,
   Gem,
+  Dna,
 } from 'lucide-react';
 import {
   Tooltip,
@@ -18,6 +19,7 @@ const navItems = [
     { href: "/about", icon: Info, label: "About" },
     { href: "/features", icon: Gem, label: "Features" },
     { href: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
+    { href: "/dashboard/molecular-biodiversity", icon: Dna, label: "Molecular Biodiversity"},
 ];
 
 export function AppSidebar() {
