@@ -9,7 +9,7 @@ export function Logo({ className, showText = true }: { className?: string; showT
         <div className="flex flex-col">
             <span className="text-2xl tracking-tight font-bold text-primary">SAMUDRA</span>
             <p className="text-xs font-normal text-foreground/70 tracking-wide">
-                (Sustainable AI for Marine Unified Data, Research & Analytics)
+                (Sustainable AI for Marine Unified Data & Research)
             </p>
         </div>
       )}
