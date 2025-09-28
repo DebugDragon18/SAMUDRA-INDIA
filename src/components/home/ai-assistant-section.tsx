@@ -29,7 +29,7 @@ export function AiAssistantSection() {
           <div className="md:col-span-2">
             <div className="relative flex h-[500px] w-full flex-col items-center justify-center gap-6 overflow-hidden rounded-lg bg-primary/10 p-8 text-center shadow-lg">
                 <Image
-                    src="https://images.unsplash.com/photo-1599389816801-645377827b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMG9jZWFufGVufDB8fHx8MTc1ODg5ODc3MXww&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="https://picsum.photos/seed/ai-ocean-2/1080/810"
                     alt="AI Ocean Visualization"
                     fill
                     className="object-cover opacity-20"
