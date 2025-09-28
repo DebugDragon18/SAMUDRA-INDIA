@@ -1,5 +1,8 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { BrainCircuit, MessageSquare } from 'lucide-react';
+import { BrainCircuit, MessageSquare, Rocket } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const exampleQuestions = [
     'What is the biodiversity risk score near Andaman?',
@@ -24,15 +27,25 @@ export function AiAssistantSection() {
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
-            <Card className="h-[600px] w-full overflow-hidden shadow-lg">
-              <CardContent className="p-0 h-full">
-                <iframe
-                  src="https://chatgpt.com/g/g-68d9861b1f348191bcbd0dccc252ab92-samudra-ai-marine-science-assistant"
-                  className="h-full w-full border-0"
-                  title="Samudra AI Marine Science Assistant"
+            <div className="relative flex h-[500px] w-full flex-col items-center justify-center gap-6 overflow-hidden rounded-lg bg-primary/10 p-8 text-center shadow-lg">
+                <Image
+                    src="https://images.unsplash.com/photo-1599389816801-645377827b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMG9jZWFufGVufDB8fHx8MTc1ODg5ODc3MXww&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="AI Ocean Visualization"
+                    fill
+                    className="object-cover opacity-20"
+                    data-ai-hint="ai ocean"
                 />
-              </CardContent>
-            </Card>
+                <div className="relative z-10">
+                    <h3 className="text-2xl font-bold text-primary">Engage with Samudra AI</h3>
+                    <p className="mt-2 text-foreground/80">Click the button below to start a conversation with our powerful marine science assistant.</p>
+                    <Button asChild size="lg" className="mt-6">
+                        <Link href="https://chatgpt.com/g/g-68d9861b1f348191bcbd0dccc252ab92-samudra-ai-marine-science-assistant" target="_blank">
+                            <Rocket className="mr-2 h-5 w-5" />
+                            Try Samudra AI
+                        </Link>
+                    </Button>
+                </div>
+            </div>
           </div>
           <div className="flex flex-col gap-4">
              <h3 className="text-lg font-semibold">Example Questions:</h3>
