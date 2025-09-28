@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useRef, useEffect } from 'react';
@@ -20,7 +21,7 @@ export function OceanChatbot() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const scrollAreaRef = useRef<HTMLDivElement>(null);
+  const scrollViewportRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMessages([
@@ -33,11 +34,8 @@ export function OceanChatbot() {
   }, []);
 
   useEffect(() => {
-    if (scrollAreaRef.current) {
-        const viewport = scrollAreaRef.current.querySelector('div');
-        if (viewport) {
-            viewport.scrollTop = viewport.scrollHeight;
-        }
+    if (scrollViewportRef.current) {
+        scrollViewportRef.current.scrollTop = scrollViewportRef.current.scrollHeight;
     }
   }, [messages]);
 
@@ -96,8 +94,8 @@ export function OceanChatbot() {
                 </div>
             </CardHeader>
             <CardContent className="flex-1 p-0">
-                <ScrollArea ref={scrollAreaRef} className="h-full p-4">
-                <div className="space-y-4">
+                <ScrollArea className="h-full" viewportRef={scrollViewportRef}>
+                <div className="space-y-4 p-4">
                     {messages.map((message) => (
                     <div
                         key={message.id}
@@ -116,7 +114,7 @@ export function OceanChatbot() {
                             'max-w-[75%] rounded-xl px-4 py-2 text-sm',
                             message.sender === 'user'
                             ? 'bg-primary text-primary-foreground'
-                            : 'bg-muted text-muted-foreground'
+                            : 'bg-muted' // Simplified for better contrast
                         )}
                         >
                         {message.text}
