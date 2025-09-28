@@ -14,7 +14,7 @@ import { AiAssistantSection } from '@/components/home/ai-assistant-section';
 
 export default function HomePage() {
   return (
-    <div className="flex min-h-screen w-full flex-col" style={{ backgroundColor: 'hsl(210, 80%, 98%)' }}>
+    <div className="flex min-h-screen w-full flex-col bg-background">
       <AppHeader />
       <main className="flex-1">
         <HeroSection />

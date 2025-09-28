@@ -8,12 +8,12 @@ const teamMembers = [
   { id: '3',name: 'Sarthak Wawre', role: 'Backend Developer', imageUrl: 'https://images.unsplash.com/photo-1537006176750-19c08a9af863?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8bWFsZSUyMHBob3Rvc3xlbnwwfHx8fDE3NTgwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080' },
   { id: '4', name: 'Shalvi Mate', role: 'Content Lead & Research', imageUrl: 'https://images.unsplash.com/photo-1752650733757-bcb151bc2045?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBmZW1hbGUlMjBwaG90b3N8ZW58MHx8fHwxNzU4MDE5Njg3fDA&ixlib=rb-4.1.0&q=80&w=1080' },
   { id: '5', name: 'Leekhit Ingle', role: 'Lead Presentation', imageUrl: 'https://images.unsplash.com/photo-1592710630283-614388cc92cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8bWFsZSUyMHByb2Zlc3Npb25hbCUyMHBob3xlbnwwfHx8fDE3NTgwMTk3NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080' },
-  { id: '6', name: 'Swapnil Pophale', role: 'Lead Documentation', imageUrl: 'https://images.unsplash.com/photo-1659353219150-377222056797?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwcHJvZmVzc2lvbmFsJTIwcGhvdHN8ZW58MHx8fHwxNzU4MDE5ODM4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
+  { id: '6', name: 'Swapnil Pophale', role: 'Lead Documentation', imageUrl: 'https://images.unsplash.com/photo-1659353219150-377222056797?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwcHJvZmVzc2lvbmFsJTIwcGhvdHN8ZW58MHx8fHwxNzU4MDE5ODM4fDA&ixlib-rb-4.1.0&q=80&w=1080' },
 ];
 
 export function TeamSection() {
   return (
-    <section className="py-16 md:py-24" style={{ backgroundColor: 'hsl(210 80% 96%)' }}>
+    <section className="py-16 md:py-24 bg-primary/5">
       <div className="container mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">

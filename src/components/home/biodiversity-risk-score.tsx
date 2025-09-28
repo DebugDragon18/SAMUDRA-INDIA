@@ -39,7 +39,7 @@ export function BiodiversityRiskScore() {
   }, []);
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 bg-primary/5">
         <div className="container mx-auto">
             <Link href="/dashboard/biodiversity-risk">
                 <Card className="max-w-md mx-auto shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
