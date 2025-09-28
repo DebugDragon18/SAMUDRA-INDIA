@@ -20,6 +20,7 @@ export default function HomePage() {
         <HeroSection />
         <DataPlatformSection />
         <KeyFeaturesSection />
+        <OceanChatbot />
         <CtaSection />
         <LatestNewsSection />
         <MarineFactsSection />
@@ -28,7 +29,6 @@ export default function HomePage() {
         <TeamSection />
         <FeedbackSection />
       </main>
-      <OceanChatbot />
       <Footer />
     </div>
   );
