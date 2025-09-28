@@ -10,6 +10,7 @@ import { FeedbackSection } from '@/components/home/feedback-section';
 import { MarineFactsSection } from '@/components/home/marine-facts-section';
 import { NgoSection } from '@/components/home/ngo-section';
 import { BiodiversityRiskScore } from '@/components/home/biodiversity-risk-score';
+import { OceanChatbot } from '@/components/home/ocean-chatbot';
 
 export default function HomePage() {
   return (
@@ -27,6 +28,7 @@ export default function HomePage() {
         <TeamSection />
         <FeedbackSection />
       </main>
+      <OceanChatbot />
       <Footer />
     </div>
   );
