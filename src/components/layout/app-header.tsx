@@ -38,8 +38,8 @@ export function AppHeader() {
       </div>
 
       <div className="flex items-center gap-4">
-        <Button variant="outline" className="hidden md:flex">
-          Request a demo
+        <Button variant="outline" className="hidden md:flex" asChild>
+          <Link href="/preview">Request a demo</Link>
         </Button>
         <Button>
           <Link href="/login">Sign In</Link>
