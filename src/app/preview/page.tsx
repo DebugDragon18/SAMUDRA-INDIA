@@ -3,6 +3,7 @@ import { Footer } from '@/components/layout/footer';
 import { TideChart } from '@/components/preview/tide-chart';
 import { AquaLinkMap } from '@/components/preview/aqualink-map';
 import { VentuskyMap } from '@/components/preview/ventusky-map';
+import { AiAssistantSection } from '@/components/home/ai-assistant-section';
 
 export default function PreviewPage() {
   return (
@@ -19,6 +20,7 @@ export default function PreviewPage() {
         </section>
         <TideChart />
         <AquaLinkMap />
+        <AiAssistantSection />
         <VentuskyMap />
       </main>
       <Footer />
