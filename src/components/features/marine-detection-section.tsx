@@ -5,17 +5,7 @@ export function MarineDetectionSection() {
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 md:grid-cols-2">
-        <div>
-          <Image
-            src="https://images.unsplash.com/photo-1565103170138-19a4a35568a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJpbmUlMjBkZXRlY3Rpb258ZW58MHx8fHwxNzU4OTAxMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Marine life detection underwater"
-            width={800}
-            height={600}
-            className="rounded-lg object-cover"
-            data-ai-hint="marine detection"
-          />
-        </div>
-        <div>
+        <div className="order-2 md:order-1">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
             AI-Powered Marine Detection
           </h2>
@@ -51,6 +41,16 @@ export function MarineDetectionSection() {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="order-1 md:order-2">
+          <Image
+            src="https://images.unsplash.com/photo-1565103170138-19a4a35568a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJpbmUlMjBkZXRlY3Rpb258ZW58MHx8fHwxNzU4OTAxMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="Marine life detection underwater"
+            width={800}
+            height={600}
+            className="rounded-lg object-cover"
+            data-ai-hint="marine detection"
+          />
         </div>
       </div>
     </section>
