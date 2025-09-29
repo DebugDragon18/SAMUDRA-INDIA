@@ -5,7 +5,6 @@ import { AppHeader } from '@/components/layout/app-header';
 import { AppSidebar } from '@/components/layout/app-sidebar';
 import { coralReefData, CoralReef } from '@/lib/coral-reef-data';
 import { ReefFilters } from '@/components/dashboard/coral-reef-mapping/reef-filters';
-import { ReefDetails } from '@/components/dashboard/coral-reef-mapping/reef-details';
 import { SubmissionForm } from '@/components/dashboard/coral-reef-mapping/submission-form';
 import { CoralReefMap } from '@/components/dashboard/coral-reef-mapping/coral-map';
 import { AllenCoralAtlas } from '@/components/dashboard/coral-reef-mapping/allen-coral-atlas';
@@ -39,11 +38,7 @@ export default function CoralReefMappingPage() {
               </div>
             </div>
             <div className="lg:col-span-1 h-full overflow-y-auto">
-              {selectedReef ? (
-                <ReefDetails reef={selectedReef} />
-              ) : (
-                <SubmissionForm />
-              )}
+              <SubmissionForm />
             </div>
           </div>
 
