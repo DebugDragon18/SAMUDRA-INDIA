@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Waves, Fish, Sprout, BrainCircuit, Camera } from 'lucide-react';
+import { Waves, Fish, Sprout, BrainCircuit, Camera, Siren } from 'lucide-react';
 
 const features = [
   {
@@ -11,6 +11,11 @@ const features = [
     icon: <Camera className="h-8 w-8 text-primary" />,
     title: 'Marine Detection',
     description: 'Detect and identify marine species in real-time from video feeds or your device camera.',
+  },
+  {
+    icon: <Siren className="h-8 w-8 text-primary" />,
+    title: 'SOS & Advisory',
+    description: 'Receive critical SOS alerts and fishing advisories to ensure safety and improve efficiency at sea.',
   },
   {
     icon: <Waves className="h-8 w-8 text-primary" />,
@@ -41,7 +46,7 @@ export function KeyFeaturesSection() {
             Dive into the data and tools that power a sustainable blue economy.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-6">
           {features.map((feature) => (
             <Card key={feature.title} className="bg-background/50 border-primary/20">
               <CardHeader>
