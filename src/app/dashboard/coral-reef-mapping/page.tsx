@@ -8,6 +8,7 @@ import { ReefFilters } from '@/components/dashboard/coral-reef-mapping/reef-filt
 import { ReefDetails } from '@/components/dashboard/coral-reef-mapping/reef-details';
 import { SubmissionForm } from '@/components/dashboard/coral-reef-mapping/submission-form';
 import { CoralReefMap } from '@/components/dashboard/coral-reef-mapping/coral-map';
+import { AllenCoralAtlas } from '@/components/dashboard/coral-reef-mapping/allen-coral-atlas';
 
 export default function CoralReefMappingPage() {
   const [selectedReef, setSelectedReef] = useState<CoralReef | null>(coralReefData[0]);
@@ -18,8 +19,8 @@ export default function CoralReefMappingPage() {
       <AppSidebar />
       <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
         <AppHeader />
-        <main className="flex-1 p-4 sm:px-6 sm:py-0">
-          <div className="mb-4">
+        <main className="flex-1 p-4 sm:px-6 sm:py-0 space-y-6">
+          <div>
             <h1 className="text-3xl font-bold tracking-tight">Coral Reef Mapping</h1>
             <p className="text-muted-foreground">
               Analyze, and contribute data about coral reefs in India and neighbouring seas.
@@ -45,6 +46,8 @@ export default function CoralReefMappingPage() {
               )}
             </div>
           </div>
+
+          <AllenCoralAtlas />
         </main>
       </div>
     </div>

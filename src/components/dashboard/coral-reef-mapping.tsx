@@ -1,6 +1,7 @@
 "use client"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export function CoralReefMapping() {
@@ -13,10 +14,12 @@ export function CoralReefMapping() {
                 </CardHeader>
                 <CardContent>
                     <div className="relative h-64 w-full">
-                        <iframe
-                            src="https://allencoralatlas.org/atlas/#6.13/17.6043/74.4592"
-                            className="h-full w-full rounded-lg border"
-                            title="Allen Coral Atlas Map"
+                        <Image 
+                            src="https://picsum.photos/seed/coral-map/600/400"
+                            alt="Coral reef map"
+                            fill
+                            className="object-cover rounded-lg"
+                            data-ai-hint="coral map"
                         />
                     </div>
                 </CardContent>
