@@ -3,6 +3,16 @@ import { Waves, Fish, Sprout, BrainCircuit, Camera } from 'lucide-react';
 
 const features = [
   {
+    icon: <BrainCircuit className="h-8 w-8 text-primary" />,
+    title: 'Advanced AI Prediction',
+    description: 'Utilize our AI-powered models to forecast trends, from fish stock fluctuations to climate impact.',
+  },
+  {
+    icon: <Camera className="h-8 w-8 text-primary" />,
+    title: 'Marine Detection',
+    description: 'Detect and identify marine species in real-time from video feeds or your device camera.',
+  },
+  {
     icon: <Waves className="h-8 w-8 text-primary" />,
     title: 'Ocean Live Data',
     description: 'Access real-time oceanographic data streams from a global network of sensors and buoys.',
@@ -16,16 +26,6 @@ const features = [
     icon: <Sprout className="h-8 w-8 text-primary" />,
     title: 'Ocean Biodiversity Data',
     description: 'Explore vast collections of information on marine species, habitats, and genetic diversity.',
-  },
-  {
-    icon: <BrainCircuit className="h-8 w-8 text-primary" />,
-    title: 'Advanced AI Prediction',
-    description: 'Utilize our AI-powered models to forecast trends, from fish stock fluctuations to climate impact.',
-  },
-  {
-    icon: <Camera className="h-8 w-8 text-primary" />,
-    title: 'Marine Detection',
-    description: 'Detect and identify marine species in real-time from video feeds or your device camera.',
   },
 ];
 
