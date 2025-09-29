@@ -5,6 +5,7 @@ import { LiveOceanDataSection } from '@/components/features/live-ocean-data-sect
 import { FisheriesDataSection } from '@/components/features/fisheries-data-section';
 import { BiodiversityDataSection } from '@/components/features/biodiversity-data-section';
 import { AiForOceanSection } from '@/components/features/ai-for-ocean-section';
+import { MarineDetectionSection } from '@/components/features/marine-detection-section';
 
 export default function FeaturesPage() {
   return (
@@ -15,6 +16,7 @@ export default function FeaturesPage() {
         <LiveOceanDataSection />
         <FisheriesDataSection />
         <BiodiversityDataSection />
+        <MarineDetectionSection />
         <AiForOceanSection />
       </main>
       <Footer />
