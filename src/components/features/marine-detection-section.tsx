@@ -44,12 +44,12 @@ export function MarineDetectionSection() {
         </div>
         <div className="order-1 md:order-2">
           <Image
-            src="https://images.unsplash.com/photo-1565103170138-19a4a35568a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJpbmUlMjBkZXRlY3Rpb258ZW58MHx8fHwxNzU4OTAxMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="https://images.unsplash.com/photo-1533787896899-91b040188f57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMGFuaW1hbHN8ZW58MHx8fHwxNzU5MTczMDI4fDA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Marine life detection underwater"
             width={800}
             height={600}
             className="rounded-lg object-cover"
-            data-ai-hint="marine detection"
+            data-ai-hint="ocean animals"
           />
         </div>
       </div>
