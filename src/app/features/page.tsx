@@ -13,11 +13,11 @@ export default function FeaturesPage() {
       <AppHeader />
       <main className="flex-1">
         <FeaturesHero />
+        <AiForOceanSection />
+        <MarineDetectionSection />
         <LiveOceanDataSection />
         <FisheriesDataSection />
         <BiodiversityDataSection />
-        <MarineDetectionSection />
-        <AiForOceanSection />
       </main>
       <Footer />
     </div>
