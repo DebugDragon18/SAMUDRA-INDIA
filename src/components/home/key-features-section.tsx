@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Waves, Fish, Sprout, BrainCircuit, Camera, Siren } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 
 const features = [
   {
@@ -11,6 +12,7 @@ const features = [
     icon: <Camera className="h-8 w-8 text-primary" />,
     title: 'Marine Detection',
     description: 'Detect and identify marine species in real-time from video feeds or your device camera.',
+    tag: 'Coming Soon',
   },
   {
     icon: <Siren className="h-8 w-8 text-primary" />,
@@ -53,6 +55,11 @@ export function KeyFeaturesSection() {
                 <div className="flex flex-col items-start gap-4">
                   {feature.icon}
                   <CardTitle>{feature.title}</CardTitle>
+                   {feature.tag && (
+                    <Badge variant="secondary" className="text-xs">
+                      {feature.tag}
+                    </Badge>
+                  )}
                 </div>
               </CardHeader>
               <CardContent>
