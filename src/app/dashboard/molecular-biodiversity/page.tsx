@@ -26,19 +26,17 @@ export default function MolecularBiodiversityPage() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-150px)]">
-            <div className="lg:col-span-2 h-full">
-                <MolecularBiodiversityMap 
-                    locations={molecularData} 
-                    onSelectLocation={setSelectedLocation}
-                    selectedLocation={selectedLocation}
-                />
-            </div>
-            <div className="lg:col-span-1 h-full overflow-y-auto">
+          <div className="relative h-[calc(100vh-150px)]">
+            <MolecularBiodiversityMap 
+                locations={molecularData} 
+                onSelectLocation={setSelectedLocation}
+                selectedLocation={selectedLocation}
+            />
+            <div className="absolute top-4 right-4 z-[1000] w-full max-w-sm">
                 {selectedLocation ? (
                     <LocationDetails location={selectedLocation} />
                 ) : (
-                    <div className="flex items-center justify-center h-full text-muted-foreground">
+                    <div className="flex items-center justify-center h-full text-muted-foreground bg-card p-6 rounded-lg shadow-lg">
                         <p>Select a location on the map to view details.</p>
                     </div>
                 )}
