@@ -9,32 +9,43 @@ const features = [
     title: 'Advanced AI Prediction',
     description: 'Utilize our AI-powered models to forecast trends, from fish stock fluctuations to climate impact.',
     link: 'https://chatgpt.com/g/g-68d9861b1f348191bcbd0dccc252ab92-samudra-ai-marine-science-assistant',
+    external: true,
   },
   {
     icon: <Camera className="h-8 w-8 text-primary" />,
     title: 'Marine Detection',
     description: 'Detect and identify marine species in real-time from video feeds or your device camera.',
     tag: 'Coming Soon',
+    link: '#',
+    external: false,
   },
   {
     icon: <Siren className="h-8 w-8 text-primary" />,
     title: 'SOS & Advisory',
     description: 'Receive critical SOS alerts and fishing advisories to ensure safety and improve efficiency at sea.',
+    link: '/dashboard/sos-advisory',
+    external: false,
   },
   {
     icon: <Waves className="h-8 w-8 text-primary" />,
     title: 'Ocean Live Data',
     description: 'Access real-time oceanographic data streams from a global network of sensors and buoys.',
+    link: '/preview',
+    external: false,
   },
   {
     icon: <Fish className="h-8 w-8 text-primary" />,
     title: 'Fisheries Data',
     description: 'Analyze comprehensive datasets on catch volumes, species distribution, and fishing vessel activity.',
+    link: '/dashboard/potential-fishing-zone',
+    external: false,
   },
   {
     icon: <Sprout className="h-8 w-8 text-primary" />,
     title: 'Ocean Biodiversity Data',
     description: 'Explore vast collections of information on marine species, habitats, and genetic diversity.',
+    link: '/dashboard/molecular-biodiversity',
+    external: false,
   },
 ];
 
@@ -71,9 +82,9 @@ export function KeyFeaturesSection() {
               </Card>
             );
 
-            if (feature.link) {
+            if (feature.link && feature.link !=='#') {
               return (
-                <Link key={feature.title} href={feature.link} target="_blank" rel="noopener noreferrer">
+                <Link key={feature.title} href={feature.link} target={feature.external ? "_blank" : "_self"} rel={feature.external ? "noopener noreferrer" : ""}>
                   {cardContent}
                 </Link>
               );
