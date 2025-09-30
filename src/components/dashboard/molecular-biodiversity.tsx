@@ -17,7 +17,7 @@ export function MolecularBiodiversity() {
                 </CardHeader>
                 <CardContent>
                     <div className="relative h-64 w-full">
-                        <Image src="https://images.unsplash.com/photo-1579974199252-9FFc6c7b3c29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkbmElMjBzdHJhbmR8ZW58MHx8fHwxNzU4NzM5OTQyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="DNA Strand" fill objectFit="cover" className="rounded-lg" data-ai-hint="dna strand" />
+                        <Image src="https://images.unsplash.com/photo-1635819335758-304866e30d39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8bW9sZWN1bGFyJTIwZGF0YXxlbnwwfHx8fDE3NTkyMTEyODh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="DNA Strand" fill objectFit="cover" className="rounded-lg" data-ai-hint="molecular data" />
                     </div>
                 </CardContent>
             </Card>
