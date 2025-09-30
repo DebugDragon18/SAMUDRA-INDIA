@@ -12,8 +12,8 @@ export function CtaSection() {
           Join our community of ocean innovators and start making a difference today.
         </p>
         <div className="mt-8 flex justify-center gap-4">
-          <Button size="lg">
-            <Link href="/dashboard">Get Started for Free</Link>
+          <Button size="lg" asChild>
+            <Link href="/community">Get Started for Free</Link>
           </Button>
           <Button size="lg" variant="outline">
             Talk to an Expert
