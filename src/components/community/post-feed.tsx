@@ -16,7 +16,7 @@ const mockPosts = [
     },
     timestamp: "8h ago",
     content: "Just published our findings on the impact of microplastics on deep-sea coral ecosystems in the Indian Ocean. The results are concerning, but there's a path forward. #oceanhealth #research",
-    imageUrl: "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800&h=600&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1620325407328-3e036e2cac53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8c2VhJTIwY29yYWx8ZW58MHx8fHwxNzU5MjEzNzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "coral reef",
     likes: 128,
     comments: 23,
